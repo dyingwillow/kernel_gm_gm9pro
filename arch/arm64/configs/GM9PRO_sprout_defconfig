@@ -691,3 +691,12 @@ CONFIG_CRYPTO_AES_ARM64_CE_BLK=y
 CONFIG_CRYPTO_AES_ARM64_NEON_BLK=y
 CONFIG_CRYPTO_CRC32_ARM64=y
 CONFIG_QMI_ENCDEC=y
+
+# TODO: Fix this! This is possibly the worst way to fix this.
+# Unfortunately, without this the device refuses to boot without magiskinit injection.
+# Therefore;
+# Too bad!
+
+# boot corruption fix
+CONFIG_CMDLINE_EXTEND=y
+CONFIG_CMDLINE="veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f"
